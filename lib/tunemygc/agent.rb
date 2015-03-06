@@ -32,6 +32,7 @@ module TuneMyGc
   end
 
   def log(message)
+    puts "[TuneMyGC, pid: #{Process.pid}] #{message}"
     logger.info "[TuneMyGC, pid: #{Process.pid}] #{message}"
   end
 

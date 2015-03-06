@@ -45,6 +45,7 @@ module TuneMyGc
     end
 
     def sync_with_tuner(snapshotter)
+binding.pry
       snapshots = 0
       # Fallback to Timeout if Net::HTTP read timeout fails
       snapshots = snapshotter.size
